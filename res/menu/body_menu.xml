@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cartFrag"
+        android:title="@string/cart"
+        android:icon="@drawable/ic_cart"/>
+    <item
+        android:id="@+id/mainFrag"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/black"
+        tools:targetApi="o" />
+    <item
+        android:id="@+id/favoritFrag"
+        android:title="@string/myfavorit"
+        android:icon="@drawable/ic_favorite"
+        android:iconTint="@color/black"
+        tools:targetApi="o" />
+</menu>

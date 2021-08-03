@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/body_nav"
+    app:startDestination="@id/mainFrag">
+
+    <fragment
+        android:id="@+id/mainFrag"
+        android:name="com.example.smile.ui.body.MainFrag"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFrag_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_mainFrag_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.smile.ui.auth.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/favoritFrag"
+        android:name="com.example.smile.ui.body.FavoritFrag"
+        tools:layout="@layout/fragment_favorit" >
+        <action
+            android:id="@+id/action_favoritFrag_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addCartFragment"
+        android:name="com.example.smile.ui.body.AddCartFragment"
+        android:label="fragment_add_cart"
+        tools:layout="@layout/fragment_add_cart" >
+        <argument
+            android:name="prouct"
+            app:argType="com.example.smile.models.Product" />
+    </dialog>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.smile.ui.body.InfoFragment"
+        tools:layout="@layout/fragment_info" >
+        <argument
+            android:name="pro"
+            app:argType="com.example.smile.models.Product" />
+        <action
+            android:id="@+id/action_infoFragment_to_mainFrag"
+            app:destination="@id/mainFrag" />
+        <action
+            android:id="@+id/action_infoFragment_to_addCartFragment"
+            app:destination="@id/addCartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFrag"
+        android:name="com.example.smile.ui.body.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_payments" >
+        <action
+            android:id="@+id/action_cartFrag_to_clientPaymentsFragment"
+            app:destination="@id/clientPaymentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientPaymentsFragment"
+        android:name="com.example.smile.ui.body.ClientPaymentsInfoFragment"
+        android:label="fragment_client_payments"
+        tools:layout="@layout/fragment_client_payments" >
+        <action
+            android:id="@+id/action_clientPaymentsFragment_to_myMapsFragment"
+            app:destination="@id/myMapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myMapsFragment"
+        android:name="com.example.smile.ui.body.MyMapsFragment"
+        android:label="fragment_my_maps"
+        tools:layout="@layout/fragment_my_maps" />
+</navigation>

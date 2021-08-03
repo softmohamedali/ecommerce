@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/logInFrag">
+
+    <fragment
+        android:id="@+id/logInFrag"
+        android:name="com.example.smile.ui.auth.LogInFrag"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFrag_to_singUpFrag"
+            app:destination="@id/singUpFrag" />
+        <action
+            android:id="@+id/action_logInFrag_to_bodyActivity2"
+            app:destination="@id/bodyActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpFrag"
+        android:name="com.example.smile.ui.auth.SingUpFrag"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" >
+        <action
+            android:id="@+id/action_singUpFrag_to_logInFrag"
+            app:destination="@id/logInFrag" />
+    </fragment>
+    <activity
+        android:id="@+id/bodyActivity2"
+        android:name="com.example.smile.ui.body.BodyActivity"
+        android:label="activity_body"
+        tools:layout="@layout/activity_body" >
+        <argument
+            android:name="currentUser"
+            app:argType="string" />
+    </activity>
+</navigation>
