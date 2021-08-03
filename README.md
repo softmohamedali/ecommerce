@@ -5,7 +5,7 @@
 <img src="zphotos/9ad91478-834a-42ba-9447-55769e101f82.jpg" width="300">
 <img src="zphotos/47bd82f9-f3d6-4e99-b198-230fa81036ac.jpg" width="300">
 <img src="zphotos/547f1358-a55e-4706-b11a-e8f734bf0f15.jpg" width="300">
-<img src="zphotos/547f1358-a55e-4706-b11a-e8f734bf0f15.jpg" width="300">
+<img src="zphotos/pic.png" width="300">
 <img src="zphotos/bbaed06d-5d03-4416-b17c-de8aad376386.jpg" width="300">
 <img src="zphotos/09657011-7ebb-44d5-b590-cf2ad28a6797.jpg" width="300">
 <img src="zphotos/17cd6f31-a949-47aa-96fb-96ed7b620ae4.jpg" width="300">
