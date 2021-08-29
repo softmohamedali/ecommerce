@@ -1,14 +1,20 @@
 # ecommerce
 
 ## features
-- show popular movie 
-- filter movie
+- Authentication (Log in ,Register)
+- show Products
 - search
 - save in favorits
+- log out
+- add Product only for admin from the app by particular email
+- add to payment and chose quantity  and size
+- modify quantity and delete it 
+- chose yor location to deliver it by google map and set base information
+- 
 
 ## Technology i used it
 - room db
-- Retrofit
+- Firebase
 - Navigation component
 - Live Data
 - Dependency injection (hilt degger)
