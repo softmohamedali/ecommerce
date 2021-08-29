@@ -92,7 +92,7 @@
 
 ## pic aplace 🌴🌴
 
-<img src="zphotos/map.PNG" width="300">
+<img src="zphotos/picture.PNG" width="300">
 <br/>
 <br/>
 
